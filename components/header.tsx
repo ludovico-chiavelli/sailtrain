@@ -1,10 +1,13 @@
 import React from 'react';
 import type { FC } from 'react';
 
+import LogoNav from './logo-nav';
+
 const Header:FC = () => {
   return (
-    <header>
-      <div className='absolute top-0 left-0 bg-gradient-to-r from-slate-800 to-slate-400 h-44 w-full'></div>
+    <header className='relative'>
+      <div className='bg-gradient-to-r from-slate-800 to-slate-400 h-44 w-full'></div>
+      <LogoNav/>
     </header>
   )
 }
