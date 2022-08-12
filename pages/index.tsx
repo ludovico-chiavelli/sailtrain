@@ -11,7 +11,7 @@ const Page: NextPageWithLayout = () => {
 
 Page.getLayout = function getLayout(page: ReactElement) {
   return (
-    <div className='overflow-auto'>
+    <div>
       <Head>
         <title>SailTrain</title>
       </Head>
