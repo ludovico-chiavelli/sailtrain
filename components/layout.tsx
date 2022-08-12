@@ -34,7 +34,7 @@ const Layout:FC<PropsWithChildren> = ({ children }) => {
   if (isMobile) {
     return (
       <Context.Provider value={isMobile}>
-        <div className='h-screen w-screen flex flex-col'>
+        <div className='h-full w-full flex flex-col overflow-auto'>
           <Header>
             <LogoNav Icons={Icons} />
           </Header>
@@ -53,7 +53,7 @@ const Layout:FC<PropsWithChildren> = ({ children }) => {
   } else {
     return (
       <Context.Provider value={ isMobile }>
-        <div className='h-screen w-screen flex flex-col'>
+        <div className='h-full w-full flex flex-col overflow-auto'>
           <Header>
             {null}
           </Header>
