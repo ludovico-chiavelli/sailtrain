@@ -38,7 +38,7 @@ const Layout:FC<PropsWithChildren> = ({ children }) => {
           <Header>
             <LogoNav Icons={Icons} />
           </Header>
-          <main className='flex-1 flex justify-center'>
+          <main className='grow flex justify-center min-h-[400px]'>
             <section className='relative mt-16 w-full'>
               <div className='absolute inset-x-8'>
                 {children}
@@ -57,7 +57,7 @@ const Layout:FC<PropsWithChildren> = ({ children }) => {
           <Header>
             {null}
           </Header>
-          <main className='flex-1 relative'>
+          <main className='relative min-h-[400px]'>
             <LogoNav Icons={Icons}/>
             <section className='md:left-56 lg:left-72 relative mt-16 w-4/6'>
               <div className='absolute inset-x-8'>
