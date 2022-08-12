@@ -1,7 +1,4 @@
-import React from 'react';
-import type { FC } from 'react';
-
-import LogoNav from './logo-nav';
+import React from 'react'
 
 const Header = ({ children }: { children: React.ReactNode | null }) => {
   return (
@@ -12,4 +9,4 @@ const Header = ({ children }: { children: React.ReactNode | null }) => {
   )
 }
 
-export default Header;
+export default Header
