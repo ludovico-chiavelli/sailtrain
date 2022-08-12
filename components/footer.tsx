@@ -1,5 +1,5 @@
-import React from 'react';
-import type { FC } from 'react';
+import React from 'react'
+import type { FC } from 'react'
 
 const Footer:FC = () => {
   return (
@@ -11,4 +11,4 @@ const Footer:FC = () => {
   )
 }
 
-export default Footer;
+export default Footer
