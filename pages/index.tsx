@@ -11,7 +11,7 @@ const Page: NextPageWithLayout = () => {
 
 Page.getLayout = function getLayout(page: ReactElement) {
   return (
-    <div>
+    <div className='h-full'>
       <Head>
         <title>SailTrain</title>
       </Head>
