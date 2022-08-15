@@ -8,9 +8,9 @@ const LogoNav = ({ Icons }: { Icons: { MarkGithubIcon: Icon, ArchiveIcon: Icon}}
 
   if (isMobile) {  
     return (
-      <div className='absolute -bottom-8 inset-x-0'>
+      <div className='absolute -bottom-8 inset-x-0 drop-shadow-md'>
         <div className='flex justify-center'>
-          <div className='rounded-full h-16 w-72 bg-slate-500 relative'>
+          <div className='rounded-full h-16 w-72 bg-bBeige relative'>
             <div className='absolute top-2 left-8'>
               <div className='flex flex-col items-center h-10'>
                 <Icons.MarkGithubIcon size={22}/>
@@ -34,8 +34,8 @@ const LogoNav = ({ Icons }: { Icons: { MarkGithubIcon: Icon, ArchiveIcon: Icon}}
     )
   } else {
     return (
-      <div className='absolute -top-14 md:left-20 lg:left-36'>
-        <div className='rounded-full h-[384px] w-32 bg-slate-500 relative'>
+      <div className='absolute -top-14 md:left-20 lg:left-36 drop-shadow-md'>
+        <div className='rounded-full h-[384px] w-32 bg-bBeige relative'>
           <div className='absolute top-3 inset-x-0'>
             <div className='flex justify-center'>
               <div className='rounded-full h-28 w-28 bg-slate-700'></div>
