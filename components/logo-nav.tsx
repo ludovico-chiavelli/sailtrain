@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 import type { Icon } from '@primer/octicons-react'
 
 import { useThemeContext } from './layout'
@@ -19,7 +20,9 @@ const LogoNav = ({ Icons }: { Icons: { MarkGithubIcon: Icon, ArchiveIcon: Icon}}
             </div>
             <div className='absolute -top-10 inset-x-0'>
               <div className='flex justify-center'>
-                <div className='rounded-full h-24 w-24 bg-slate-700'></div>
+                <div className='rounded-full h-24 w-24 overflow-hidden'>
+                  <Image src={'/pfp.png'} alt='Profile Picture' width={540} height={540} objectFit='cover'/>
+                </div>
               </div>
             </div>
             <div className='absolute top-3 right-8'>
@@ -38,7 +41,9 @@ const LogoNav = ({ Icons }: { Icons: { MarkGithubIcon: Icon, ArchiveIcon: Icon}}
         <div className='rounded-full h-[384px] w-32 bg-bBeige relative'>
           <div className='absolute top-3 inset-x-0'>
             <div className='flex justify-center'>
-              <div className='rounded-full h-28 w-28 bg-slate-700'></div>
+              <div className='rounded-full h-28 w-28 overflow-hidden'>
+                <Image src={'/pfp.png'} alt='Profile Picture' width={540} height={540} objectFit='cover'/>
+              </div>
             </div>
           </div>
           <div className='h-1/2 absolute top-36 w-full'>
