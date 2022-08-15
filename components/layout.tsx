@@ -57,9 +57,9 @@ const Layout:FC<PropsWithChildren> = ({ children }) => {
           <Header>
             {null}
           </Header>
-          <main className='relative min-h-[400px]'>
+          <main className='grow relative min-h-[400px]'>
             <LogoNav Icons={Icons}/>
-            <section className='md:left-56 lg:left-72 relative mt-16 w-4/6'>
+            <section className='md:left-60 lg:left-80 relative mt-16 w-4/6'>
               <div className='absolute inset-x-8'>
                 {children}
               </div>
