@@ -1,16 +1,16 @@
-import React, { createContext, useContext, useState, useEffect } from 'react';
-import type { FC, PropsWithChildren } from 'react';
+import React, { createContext, useContext, useState, useEffect } from 'react'
+import type { FC, PropsWithChildren } from 'react'
 
-import { MarkGithubIcon, ArchiveIcon } from '@primer/octicons-react';
+import { MarkGithubIcon, ArchiveIcon } from '@primer/octicons-react'
 
-import Header from './header';
-import Footer from './footer';
-import LogoNav from './logo-nav';
+import Header from './header'
+import Footer from './footer'
+import LogoNav from './logo-nav'
 
-const Context = createContext<boolean>(false);
+const Context = createContext<boolean>(false)
 
 const Layout:FC<PropsWithChildren> = ({ children }) => {
-  const [isMobile, setIsMobile] = useState(false);
+  const [isMobile, setIsMobile] = useState(false)
 
   const Icons = {
     MarkGithubIcon: MarkGithubIcon,
@@ -18,17 +18,17 @@ const Layout:FC<PropsWithChildren> = ({ children }) => {
   }
 
   useEffect(() => {
-    updatePredicate();
-    window.addEventListener("resize", updatePredicate)
+    updatePredicate()
+    window.addEventListener('resize', updatePredicate)
 
     return () => {
-      window.removeEventListener("resize", updatePredicate)
+      window.removeEventListener('resize', updatePredicate)
     }
   })
 
   const updatePredicate = () => {
     //Determine if mobile
-    setIsMobile(window.innerWidth < 768);
+    setIsMobile(window.innerWidth < 768)
   }
 
   if (isMobile) {
@@ -72,8 +72,8 @@ const Layout:FC<PropsWithChildren> = ({ children }) => {
   }
 }
 
-export default Layout;
+export default Layout
 
 export function useThemeContext() {
-  return useContext(Context);
+  return useContext(Context)
 }
