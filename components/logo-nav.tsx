@@ -3,6 +3,7 @@ import Image from 'next/image'
 import type { Icon } from '@primer/octicons-react'
 
 import { useThemeContext } from './layout'
+import Link from 'next/link'
 
 const LogoNav = ({ Icons }: { Icons: { MarkGithubIcon: Icon, ArchiveIcon: Icon}}) => {
   const isMobile = useThemeContext()
@@ -26,10 +27,12 @@ const LogoNav = ({ Icons }: { Icons: { MarkGithubIcon: Icon, ArchiveIcon: Icon}}
               </div>
             </div>
             <div className='absolute top-3 right-8'>
-              <div className='flex flex-col items-center h-10'>
-                <Icons.ArchiveIcon/>
-                <div>Projects</div>
-              </div>
+              <Link href='/projects'>
+                <a className='flex flex-col items-center h-10'>
+                  <Icons.ArchiveIcon size={22}/>
+                  <div>Projects</div>
+                </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -52,10 +55,12 @@ const LogoNav = ({ Icons }: { Icons: { MarkGithubIcon: Icon, ArchiveIcon: Icon}}
                 <Icons.MarkGithubIcon size={30}/>
                 <div>GitHub</div>
               </div>
-              <div className='flex flex-col items-center h-10'>
-                <Icons.ArchiveIcon size={30}/>
-                <div>Projects</div>
-              </div>
+              <Link href='/projects'>
+                <a className='flex flex-col items-center h-10'>
+                  <Icons.ArchiveIcon size={30}/>
+                  <div>Projects</div>
+                </a>
+              </Link>
             </div>
           </div>
         </div>
