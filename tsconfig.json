@@ -21,6 +21,8 @@
   },
   "include": [
     "next-env.d.ts",
+    "additional.d.ts",
+    "codersrank.d.ts",
     "**/*.ts",
     "**/*.tsx"
   ],
