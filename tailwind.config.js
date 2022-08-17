@@ -12,6 +12,9 @@ module.exports = {
         bGreen: '#84C067',
         bBeige: '#FFE3CD',
       },
+      fontFamily: {
+        Dosis: ['Dosis', 'sans-serif'],
+      }
     },
   },
   plugins: [],
