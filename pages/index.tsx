@@ -8,7 +8,7 @@ import Layout from '../components/layout'
 const Page: NextPageWithLayout = () => {
   return (
     <div className='text-white'>
-      <h1 className='text-4xl font-bold'>Welcome to my personal website!</h1>
+      <h1 className='text-5xl font-bold'>Welcome to my personal website!</h1>
       <p className='text-2xl leading-snug mt-8'>
         Hello 👋! I&apos;m a web developer. I like to tinker with web technologies and try creating something that is hopefully useful to somebody other than just myself 😅.
       </p>
