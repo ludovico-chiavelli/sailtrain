@@ -56,13 +56,13 @@ const LogoNav = ({ Icons }: { Icons: { MarkGithubIcon: Icon, ArchiveIcon: Icon}}
           <div className='h-1/2 absolute top-36 w-full'>
             <div className='h-full flex flex-col items-center justify-around'>
               <a className='z-10' href='https://github.com/ludovico-chiavelli'>
-                <div className='flex flex-col items-center h-10'>
+                <div className='flex flex-col items-center justify-center h-20 w-20 rounded-md border-2 border-transparent hover:transition-colors ease-in-out hover:border-slate-800 hover:border-opacity-30'>
                   <Icons.MarkGithubIcon size={30}/>
                   <div>GitHub</div>
                 </div>
               </a>
               <Link href='/projects'>
-                <a className='flex flex-col items-center h-10'>
+                <a className='flex flex-col items-center justify-center h-20 w-20 rounded-md border-2 border-transparent hover:transition-colors ease-in-out hover:border-slate-800 hover:border-opacity-30'>
                   <Icons.ArchiveIcon size={30}/>
                   <div>Projects</div>
                 </a>
